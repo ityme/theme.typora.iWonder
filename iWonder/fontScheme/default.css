@@ -22,7 +22,7 @@
 @font-face {
     font-family: "CodeFontFamily";
     /*代码块英文字体*/
-    src: url("font/UbuntuMono-R.ttf"),
+    src: url("font/UbuntuMonoNerdFontMono-Regular.ttf"),
     /*代码块中文字体*/
     url("font/LXGWWenKaiMono-Regular.ttf");
 }
