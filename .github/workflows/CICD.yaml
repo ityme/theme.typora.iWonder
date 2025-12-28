@@ -13,8 +13,6 @@ jobs:
     steps:
       - name: pull repository
         uses: actions/checkout@v4
-        with:
-          autocrlf: true
 
       - name: check files
         run: |
@@ -47,6 +45,10 @@ jobs:
           mv install.bat _temp_workspace/
           mv LICENSE _temp_workspace/
           mv README.md _temp_workspace/
+
+      - name: convert line endings LF -> CRLF
+        run: |
+          sed -i 's/$/\r/' _temp_workspace/install.bat
 
       - name: build release assets
         run: |
