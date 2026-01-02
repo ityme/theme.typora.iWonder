@@ -1,9 +1,9 @@
 /*样式方案选择*/
-@import url("iWonder/engineScheme/highlighter.css");
+@import "iWonder/engineScheme/highlighter.css";
 
 /*字体方案选择*/
-@import url("iWonder/fontScheme/default.css");
+@import "iWonder/fontScheme/default.css";
 
 /*配色方案选择*/
 /*青色调配色方案*/
-@import url("iWonder/colorScheme/cyan.css");
+@import "iWonder/colorScheme/cyan.css";
