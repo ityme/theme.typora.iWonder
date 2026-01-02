@@ -4,38 +4,37 @@
 /*特点：清爽、冷静、科技感强的青蓝色调*/
 
 :root {
-/*基于Header的一系列渐变色，只用于标识标题类内容*/
-/*基于文本处理的一系列渐变色，用于处理文本的特殊标记时候的背景颜色*/
-/*基于全局背景风格的一系列渐变色，用于分割整体界面的模块。*/
-/*xxx--color-0: 标识该背景下，要显示的字体的颜色。*/
-/*xxx-color-[1-n]: 标识xxx所对应标签的背景色*/
-/*使用时，不同模块之间不可以串用。 如实在需要，请在对应模块下创建新色卡变量。*/
-    
-    --header-color-0: white;
-    --header-color-1: #1e5397;
-    --header-color-2: #376db6;
-    --header-color-3: #0395ae;
-    --header-color-4: #14b8a6;
-    --header-color-5: #63a9a1;
-    --header-color-6: #9cb2d2;
+  /*基于Header的一系列渐变色，只用于标识标题类内容*/
+  /*基于文本处理的一系列渐变色，用于处理文本的特殊标记时候的背景颜色*/
+  /*基于全局背景风格的一系列渐变色，用于分割整体界面的模块。*/
+  /*xxx--color-0: 标识该背景下，要显示的字体的颜色。*/
+  /*xxx-color-[1-n]: 标识xxx所对应标签的背景色*/
+  /*使用时，不同模块之间不可以串用。 如实在需要，请在对应模块下创建新色卡变量。*/
 
-    --text-color-0: black;
-    --text-color-1: white;
-    --text-color-2: lightgray;
-    --text-color-3: gray;
+  --header-color-0: hsl(0, 0%, 100%);
+  --header-color-1: hsl(210, 67%, 36%);
+  --header-color-2: hsl(210, 62%, 47%);
+  --header-color-3: hsl(189, 96%, 35%);
+  --header-color-4: hsl(171, 80%, 40%);
+  --header-color-5: hsl(172, 26%, 53%);
+  --header-color-6: hsl(220, 42%, 72%);
 
-    --text-color-4: lightpink;
-    --text-color-5: crimson;
-    --text-color-6: red;
+  --text-color-0: hsl(0, 0%, 0%);
+  --text-color-1: hsl(0, 0%, 100%);
+  --text-color-2: hsl(0, 0%, 82%);
+  --text-color-3: hsl(0, 0%, 50%);
 
-    --text-color-7: lightcyan;
-    --text-color-9: #BDFCC9;
-    --text-color-8: #1bc7c7;
+  --text-color-4: hsl(352, 100%, 88%);
+  --text-color-5: hsl(339, 58%, 54%);
+  --text-color-6: hsl(0, 100%, 50%);
 
+  --text-color-7: hsl(180, 100%, 89%);
+  --text-color-9: hsl(136, 97%, 86%);
+  --text-color-8: hsl(180, 76%, 44%);
 
-    --scope-color-1: gray;
-    --scope-color-2: darkgray;
-    --scope-color-3: lightgray;
-    --scope-color-4: white;
-    --scope-color-5: white;
+  --scope-color-1: hsl(0, 0%, 50%);
+  --scope-color-2: hsl(0, 0%, 66%);
+  --scope-color-3: hsl(0, 0%, 82%);
+  --scope-color-4: hsl(0, 0%, 100%);
+  --scope-color-5: hsl(0, 0%, 100%);
 }
