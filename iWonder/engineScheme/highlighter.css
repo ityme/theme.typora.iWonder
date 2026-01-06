@@ -140,13 +140,15 @@ code {
   min-height: 1lh;
 }
 
-/* NOTE 双标签模式: 当h标签后缀一个 <fit> 时,  h标签会自动变为非整行模式, 长度由内容大小撑开 */
-#write h1:has(span[md-inline="tag"]),
-#write h2:has(span[md-inline="tag"]),
-#write h3:has(span[md-inline="tag"]),
-#write h4:has(span[md-inline="tag"]),
-#write h5:has(span[md-inline="tag"]),
-#write h6:has(span[md-inline="tag"]) {
+/* NOTE 双标签模式: 当h标签后缀一个 <fit> 时("fit"字符可以替换, 但不可为空),  h标签会自动变为非整行模式, 长度由内容大小撑开 */
+/* 只要满足条件的 span 数量不是 2 个及以上，就认为它是唯一的 */
+/* 只有 ## hello world <fit> 可以触发下列选择, <fit></fit>则无法触发 */
+#write h1:has(span[md-inline="tag"]):not(:has(span[md-inline="tag"]:nth-of-type(2))),
+#write h2:has(span[md-inline="tag"]):not(:has(span[md-inline="tag"]:nth-of-type(2))),
+#write h3:has(span[md-inline="tag"]):not(:has(span[md-inline="tag"]:nth-of-type(2))),
+#write h4:has(span[md-inline="tag"]):not(:has(span[md-inline="tag"]:nth-of-type(2))),
+#write h5:has(span[md-inline="tag"]):not(:has(span[md-inline="tag"]:nth-of-type(2))),
+#write h6:has(span[md-inline="tag"]):not(:has(span[md-inline="tag"]:nth-of-type(2))) {
   width: fit-content;
 }
 
