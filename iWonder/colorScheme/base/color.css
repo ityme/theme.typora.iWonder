@@ -9,7 +9,7 @@
 
   /* 全局默认内容边界区域，背景色。 */
   --scope-bg-color: var(--scope-color-3);
-  /* 侧边目录栏区域，背景颜色 */
+  /* 侧边导航栏区域，背景颜色 */
   --scope-sidebar-color: var(--scope-color-1);
   /* 正文最上方标题栏区域，背景颜色 */
   --scope-header-color: var(--scope-color-2);
@@ -108,7 +108,13 @@
   /* 侧边导航栏 文本颜色 */
   --sidebar-text-color: var(--text-color);
   /* 侧边导航栏文本的 背景颜色 */
-  --sidebar-text-bg-color: var(--text-bg-color);
+  --sidebar-text-bg-color: var(--scope-color-1);
+  /* 侧边导航栏 鼠标悬停项 背景颜色 */
+  --sidebar-hover-bg-color: var(--scope-color-2);
+  /* 侧边导航栏 文件栏->文件树->选中项背景颜色 */
+  --sidebar-select-file-bg-color: var(--scope-color-3);
+  /* 侧边导航栏 查找框背景色 */
+  --sidebar-search-bg-color: var(--scope-color-3);
 
   /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
   /* setting导航栏 背景颜色 */

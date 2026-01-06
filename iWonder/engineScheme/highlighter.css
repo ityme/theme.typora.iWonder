@@ -254,9 +254,45 @@ li p .md-plain {
 }
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
-/* 侧边目录栏 样式设置 */
+/* 侧边目录栏 大纲 样式设置 */
 header {
   background-color: var(--scope-header-color);
+}
+
+/* 大纲选中项 加粗 */
+.pin-outline #outline-content .outline-active strong,
+.pin-outline .outline-active {
+  font-weight: 900;
+}
+
+/* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
+/* 侧边文件栏 文件树 样式设置 */
+/* 鼠标悬停时, 文件项背景色 */
+.file-node-background:has(+ .file-node-content:hover) {
+  background-color: var(--sidebar-hover-bg-color);
+}
+
+/* 文件选中项背景色 */
+.file-tree-node.active > .file-node-background {
+  background-color: var(--sidebar-select-file-bg-color);
+  border-color: var(--sidebar-select-file-bg-color);
+  /* border-left: 4px solid var(--sidebar-select-file-bg-color); */
+}
+
+/* 正文搜索框/侧边导航栏查找框样式 */
+.form-control,
+#file-library-search-input {
+  background-color: var(--sidebar-search-bg-color);
+}
+
+.form-control:focus,
+#file-library-search-input:focus {
+  border-color: var(--primary-color);
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+    0 0 8px rgba(102, 175, 233, 0.6);
 }
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
