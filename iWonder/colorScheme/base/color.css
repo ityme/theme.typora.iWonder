@@ -15,7 +15,7 @@
     --scope-header-color: var(--scope-color-2);
 
     /*文本区域, 背景颜色*/
-    --scope-text-color: var(--scope-color-5);
+    --scope-text-color: var(--scope-color-4);
     /*setting导航栏 背景颜色*/
     --setting-menu-bg-color: var(--primary-color);
 
@@ -31,10 +31,10 @@
     /*选中文本的 文本颜色*/
     --select-text-font-color: var(--text-bg-color);
     /*选中文本的 背景颜色*/
-    --select-text-bg-color: var(--text-color-8);
+    --select-text-bg-color: var(--text-color-6);
 
     /*搜索(ctrl+f)命中文本的 背景颜色*/
-    --search-hit-bg-color: var(--text-color-8);
+    --search-hit-bg-color: var(--text-color-6);
 
 
     /*TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
@@ -67,17 +67,17 @@
     /*标记高亮  ==ele==  文本颜色*/
     --mark-text-color: var(--text-color);
     /*标记高亮  ==ele==   背景颜色*/
-    --mark-bg-color: var(--text-color-9);
+    --mark-bg-color: var(--text-color-5);
 
     /*斜体  *ele*  文本颜色*/
-    --italic-text-color: var(--text-color-6);
+    --italic-text-color: var(--text-color-7);
     /*斜体  *ele*  背景颜色*/
     --italic-bg-color: var(--text-bg-color);
 
     /*下划线 文本颜色*/
     --underline-text-color: var(--text-color);
     /*下划线 背景颜色*/
-    --underline-bg-color: var(--text-color-7);
+    --underline-bg-color: var(--text-color-4);
 
     /*删除线 文本颜色*/
     --deleteline-text-color: var(--text-color);
