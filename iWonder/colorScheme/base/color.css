@@ -52,7 +52,7 @@
   /* 代码块  `code`  背景颜色 */
   --code-bg-color: var(--text-color-2);
   /* 代码块  ```code```  背景颜色 */
-  --code-area-bg-color: var(--code-bg-color);
+  --code-area-bg-color: var(--text-color-3);
 
   /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
   /* 加粗  **ele**  文本颜色 */
