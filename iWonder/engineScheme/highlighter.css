@@ -125,16 +125,29 @@ code {
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* header 样式设置 */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+/* NOTE 注意: #write 前缀不可取消, 否则会被其他文件重写覆盖掉. */
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
   font-weight: normal;
   font-family: var(--header-font-family);
   padding: 3px;
   border-radius: 4px;
+  /* 最小行高, 防止after导致的高度塌陷 */
+  min-height: 1lh;
+}
+
+/* NOTE 双标签模式: 当h标签后缀一个 <fit> 时,  h标签会自动变为非整行模式, 长度由内容大小撑开 */
+#write h1:has(span[md-inline="tag"]),
+#write h2:has(span[md-inline="tag"]),
+#write h3:has(span[md-inline="tag"]),
+#write h4:has(span[md-inline="tag"]),
+#write h5:has(span[md-inline="tag"]),
+#write h6:has(span[md-inline="tag"]) {
+  width: fit-content;
 }
 
 #write h1 {
@@ -172,6 +185,40 @@ h6 {
   color: var(--header-text-color);
   background-color: var(--h6-bg-color);
   font-size: 1.1em;
+}
+
+/* header 标题后缀标识 */
+#write h2::after,
+#write h2:empty:after {
+  content: "[H-2]";
+}
+#write h3::after,
+#write h3:empty:after {
+  content: "[H-3]";
+}
+#write h4::after,
+#write h4:empty:after {
+  content: "[H-4]";
+}
+#write h5::after,
+#write h5:empty:after {
+  content: "[H-5]";
+}
+#write h6::after,
+#write h6:empty:after {
+  content: "[H-6]";
+}
+
+#write h2::after,
+#write h3::after,
+#write h4::after,
+#write h5::after,
+#write h6::after {
+  display: block;
+  color: rgb(from var(--header-text-color) r g b / 0.5);
+  user-select: none;
+  font-size: 0.5em;
+  float: right;
 }
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
@@ -212,13 +259,12 @@ tr:hover .td-span {
 }
 
 /* FIXME li 整行下划线方案 */
-li p .md-plain {
-  /* display: block; */
-  /* border-bottom: 1px solid red; */
-  /* height: 22px; */
-  /* margin: 12px 0; */
-  /* margin:   li里面的下划线位置 */
-}
+/* li p .md-plain {
+  display: block;
+  border-bottom: 1px solid red;
+  height: 22px;
+  margin: 12px 0;
+} */
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* 引用样式设置 */
