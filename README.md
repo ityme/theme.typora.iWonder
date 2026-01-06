@@ -12,13 +12,15 @@
 
 > 1. 主题配色方案让重点更突出醒目, 详见下方预览.
 > 2. 提供更简化的标签快捷键, 配合自定义的标签颜色, 一键修改选中文本颜色.
-> 3. iWonder主题仅在Windows系统下做过测试, 无法确定Linux和Mac下效果.
-> 4. iWonder主题持续更新中.
+> 3. 提供特殊语义标签, 让页面展现出更多样式.
+> 4. iWonder主题仅在Windows系统下做过测试, 无法确定Linux和Mac下效果.
+> 5. iWonder主题持续更新中.
 
 > 1. The theme color scheme makes the key points more prominent and eye-catching, as shown in the preview.
 > 2. Provide simplified label shortcuts, combined with custom label colors, to modify the selected text color with just one click.
-> 3. The iWonder theme has only been tested on Windows systems and cannot determine its effectiveness on Linux and Mac.
-> 4. The iWonder theme is constantly being updated.
+> 3. Provide special semantic tags to display more styles on the page.
+> 4. The iWonder theme has only been tested on Windows systems and cannot determine its effectiveness on Linux and Mac.
+> 5. The iWonder theme is constantly being updated.
 
 ## 私人订制 | DIY
 
@@ -101,23 +103,35 @@
 | CodeFences | 多行代码块 | `Ctrl+Shift+K` |
 | Image      | 图片       | `Ctrl+Shift+I` |
 
+## 语义标签
+
+> [!Tip]
+>
+> <font color="#1f883d">部分文本中, 通过后缀特殊语义标签, 可拥有不同效果.</font>
+>
+> <font color="#1f883d">示例: `## hello <fit>`可使二级标题背景色不再填充整行.</font>  
+
+| 语义标签 | 适用范围                              | 作用                                                         |
+| -------- | ------------------------------------- | ------------------------------------------------------------ |
+| `<fit>`  | 标题`header` 如: `# ## ### #### etc.` | 标题默认背景色填充整行, 在标题中后缀本标签后, 背景色不再填充整行, 而是由内容撑开 |
+
+
+
 ## 预览 | Preview
 
-### 缩略图
+### 封面原图
 
-![缩略图](ref/iWonder.png)
+<img src="ref/thumbnail-origin.png" alt="封面图-原图" style="zoom: 33%;" /> 
 
 ### 窄屏模式
 
-<img src="ref/demo-img-01.png" alt="demo-img-01" style="zoom: 33%;" />
+<img src="ref/narrow-screen-mode-without-sidebar.png" alt="窄屏模式-无侧边栏" style="zoom: 33%;" /> <img src="ref/narrow-screen-mode.png" alt="窄屏模式" style="zoom: 33%;" /> 
+
+
 
 ### 宽屏模式
 
-<img src="ref/demo-img-02.png" alt="demo-img-02" style="zoom:33%;" />
-
-<img src="ref/demo-img-03.png" alt="demo-img-03" style="zoom:33%;" />
-
-<img src="ref/demo-img-04.png" alt="demo-img-04" style="zoom:33%;" />
+<img src="ref/full-screen-mode-without-sidebar.png" alt="宽屏模式-无侧边栏" style="zoom:33%;" />  <img src="ref/full-screen-mode.png" alt="宽屏模式" style="zoom:33%;" />
 
 ### 设置界面
-<img src="ref/demo-img-05.png" alt="demo-img-05" style="zoom:33%;" />
+<img src="ref/settings-page.png" alt="设置界面" style="zoom:33%;" /> 
