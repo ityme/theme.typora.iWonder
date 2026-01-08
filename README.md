@@ -24,39 +24,39 @@
 
 ## 私人订制 | DIY
 
-> 通过修改`iWonder > colorScheme > blue.css` 和 `iWonder > fontScheme > default.css`中的配置项, 可以任意修改本主题的字体和颜色.
+> 通过修改`iWonder > color-scheme > blue.css` 和 `iWonder > font-scheme > default.css`中的配置项, 可以任意修改本主题的字体和颜色.
 >
 > 进阶：定制多个主题并存.
 >
 > 示例：假设, 我想要修改一套红色, 宋体字体的主题, 那么我可以：
 >
-> 1. 复制`iWonder > colorScheme > blue.css`并将之重命名为`red.css`, 修改其中的颜色为红色系列.
+> 1. 复制`iWonder > color-scheme > blue.css`并将之重命名为`red.css`, 修改其中的颜色为红色系列.
 >
-> 2. 复制`iWonder > fontScheme > default.css`并将之重命名为`song.css`, 修改其中的字体为宋体.
+> 2. 复制`iWonder > font-scheme > default.css`并将之重命名为`song.css`, 修改其中的字体为宋体.
 >
 > 3. 复制`i-w-blue.css`并将之重命名为`i-w-red.css`,
 >
->    修改其中`@import url("iWonder/colorScheme/blue.css");`文本为`@import url("iWonder/colorScheme/red.css")`,
+>    修改其中`@import url("iWonder/color-scheme/blue.css");`文本为`@import url("iWonder/color-scheme/red.css")`,
 >
->    修改其中`@import url("iWonder/fontScheme/default.css");`文本为`@import url("iWonder/fontScheme/song.css")`.
+>    修改其中`@import url("iWonder/font-scheme/default.css");`文本为`@import url("iWonder/font-scheme/song.css")`.
 >
 > 4. Typora中切换名为`IWRed`的主题.
 
-> You can modify the font and color of this theme arbitrarily by modifying the configuration items in `iWonder > colorScheme > blue.css` and `Font > fontScheme > default.css`.
+> You can modify the font and color of this theme arbitrarily by modifying the configuration items in `iWonder > color-scheme > blue.css` and `Font > font-scheme > default.css`.
 >
 > Advanced: customize the coexistence of multiple themes.
 >
 > Example: suppose I want to change the theme of a set of red and song font, then I can:
 >
-> 1. Copy `red > colorScheme > blue.css` and rename it to `red.css`, and change the color to red series.
+> 1. Copy `red > color-scheme > blue.css` and rename it to `red.css`, and change the color to red series.
 >
-> 2. Copy `iWonder > fontScheme > default.css` and rename it `song.css`, and change the font to Song font.
+> 2. Copy `iWonder > font-scheme > default.css` and rename it `song.css`, and change the font to Song font.
 >
 > 3. Copy `i-w-blue.css` and rename it `i-w-red.css`.
 >
->    Modify `@ import url ("iWonder/colorScheme/blue.css");` text to `@ import url ("iWonder/colorScheme/red.css")`.
+>    Modify `@ import url ("iWonder/color-scheme/blue.css");` text to `@ import url ("iWonder/color-scheme/red.css")`.
 >
->    Modify `@ import url ("iWonder/fontScheme/default.css");` text to `@ import url ("iWonder/fontScheme/song.css")`.
+>    Modify `@ import url ("iWonder/font-scheme/default.css");` text to `@ import url ("iWonder/font-scheme/song.css")`.
 >
 > 4. Switch the Typora theme named `IWRed`.
 

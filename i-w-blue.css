@@ -1,8 +1,8 @@
 /*样式方案选择*/
-@import "iWonder/engineScheme/highlighter.css";
+@import "iWonder/engine-scheme/highlighter.css";
 
 /*字体方案选择*/
-@import "iWonder/fontScheme/default.css";
+@import "iWonder/font-scheme/default.css";
 
 /*配色方案选择*/
-@import "iWonder/colorScheme/blue.css";
+@import "iWonder/color-scheme/blue.css";
