@@ -42,4 +42,7 @@
   --text-color-7: hsl(0, 100%, 50%);
   --text-color-8: hsl(352, 100%, 88%);
   --text-color-9: hsl(339, 58%, 54%);
+
+    /* 特殊配色 */
+  --etc-color-1: inherit;
 }
