@@ -17,6 +17,14 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+/* body 基础高度设置 */
+/* 避免因为 header浮动 和 content定位 导致的高度塌陷问题 */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* 背景色设置 */
 /* 全局 / scope 背景色 */
