@@ -351,6 +351,23 @@ header {
     0 0 8px rgba(102, 175, 233, 0.6);
 }
 
+/* 侧边栏弹出/收起 动画效果 */
+/* NOTE: transition 此处width 会导致duration(0s)失效 但可以避免动画不一致问题 */
+/* NOTE: 动画不一致问题: 先撑开元素, 内容后续才会跟上 */
+#typora-sidebar,
+header,
+#top-titlebar,
+footer.ty-footer,
+content,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) header,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #top-titlebar,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) footer.ty-footer,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) content {
+  transition: width 0s;
+}
+
+
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* 页面最上方的 打开的本文件名 */
 #title-text {
