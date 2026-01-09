@@ -367,11 +367,26 @@ content,
   transition: width 0s;
 }
 
-
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
-/* 页面最上方的 打开的本文件名 */
+/* 页面最上方的 header设置 */
+/* #top-titlebar 高度 与 header高度保持一致 */
+#top-titlebar {
+  height: inherit;
+}
+
+/* header相关的文本垂直居中 */
+#w-titlebar-left,
+#w-traffic-lights {
+  height: inherit;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 #title-text {
-  font-family: var(--text-font-family);
+  font-family: var(--code-font-family);
+  padding-top: 0;
 }
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
