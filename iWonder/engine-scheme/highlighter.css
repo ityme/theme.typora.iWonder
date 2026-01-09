@@ -367,6 +367,18 @@ content,
   transition: width 0s;
 }
 
+/* 侧边栏 文件/大纲 背景框着色 */
+.info-panel-tab-wrapper {
+  height: 36px;
+  margin-top: 28px;
+  background-color: var(--sidebar-text-bg-color);
+}
+
+/* 侧边栏 文件/大纲 调整位置 */
+.info-panel-tab {
+  margin-top: 4px;
+}
+
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* 页面最上方的 header设置 */
 /* #top-titlebar 高度 与 header高度保持一致 */
