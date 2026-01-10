@@ -130,6 +130,11 @@ code {
   border-radius: 3px;
   margin: 2px;
 }
+/* 特殊设置: CodeMirror: background: inherit; 全是空的, 没有继承来自md-fences的背景色设置, 因此额外指定 */
+.CodeMirror.cm-s-inner {
+  border-radius: 3px;
+  background-color: var(--code-area-bg-color);
+}
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* header 样式设置 */
