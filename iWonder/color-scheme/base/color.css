@@ -56,29 +56,29 @@
 
   /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
   /* 加粗  **ele**  文本颜色 */
-  --strong-text-color: var(--etc-color-1);
+  --strong-text-color: inherit;
   /* 加粗  **ele**  背景颜色 */
-  --strong-bg-color: var(--etc-color-1);
+  --strong-bg-color: inherit;
 
   /* 标记高亮  ==ele==  文本颜色 */
-  --mark-text-color: var(--etc-color-1);
+  --mark-text-color: inherit;
   /* 标记高亮  ==ele==   背景颜色 */
   --mark-bg-color: var(--text-color-5);
 
   /* 斜体  *ele*  文本颜色 */
   --italic-text-color: var(--text-color-7);
   /* 斜体  *ele*  背景颜色 */
-  --italic-bg-color: var(--etc-color-1);
+  --italic-bg-color: inherit;
 
   /* 下划线 文本颜色 */
-  --underline-text-color: var(--etc-color-1);
+  --underline-text-color: inherit;
   /* 下划线 背景颜色 */
-  --underline-bg-color: var(--etc-color-1);
+  --underline-bg-color: inherit;
 
   /* 删除线 文本颜色 */
-  --deleteline-text-color: var(--etc-color-1);
+  --deleteline-text-color: inherit;
   /* 删除线 背景颜色 */
-  --deleteline-bg-color: var(--etc-color-1);
+  --deleteline-bg-color: inherit;
 
   /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
   /* table表格 边框颜色 */
