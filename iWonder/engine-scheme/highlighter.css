@@ -314,6 +314,25 @@ tr:hover .td-span {
   margin: 3px;
 }
 
+/* TOC点击时, 上方弹出一个白色[目录]条. 改为绝对不展示 */
+.md-toc-tooltip {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  user-select: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+}
+
+/* 点击后toc区域时, 避免toc整体上移  */
+.md-toc-content {
+  border: none !important;
+  margin: 0 !important;
+}
+
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* 侧边目录栏 样式设置 */
 #typora-sidebar {
