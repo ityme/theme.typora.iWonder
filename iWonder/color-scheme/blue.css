@@ -16,7 +16,6 @@
     --scope-color-4    文本区域背景色
     --scope-color-5    备用
     --header-color-6   6级标题背景色同时为[TOC]目录背景色
-    --text-color-2     代码块背景色/引用下划线颜色 
     --text-color-3     代码块区域背景色
   */
 
@@ -44,7 +43,7 @@
   /* NOTE: 正文文本背景色(保持与正文背景一致, 但不要透明效果)*/
   --text-color-0: hsl(0, 0%, 0%);
   --text-color-1: hsl(70, 20%, 95%);
-  --text-color-2: hsl(0, 0%, 85%, 0.7);
+  --text-color-2: hsl(0, 0%, 82%);
   --text-color-3: hsl(225, 15%, 90%, 0.7);
 
   /* 强调文本背景色 依次为: */
