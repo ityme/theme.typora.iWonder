@@ -63,12 +63,14 @@
 
   /* 标记高亮  ==ele==  文本颜色 */
   --mark-text-color: inherit;
+
   /* 标记高亮  ==ele==   背景颜色 */
   --mark-bg-color: var(--text-color-5);
 
   /* 斜体  *ele*  文本颜色 */
   --italic-text-color: var(--text-color-7);
   /* 斜体  *ele*  背景颜色 */
+  
   --italic-bg-color: inherit;
 
   /* 下划线 文本颜色 */
