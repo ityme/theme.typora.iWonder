@@ -1,0 +1,33 @@
+/* TODO: 在此文件中, 配置背景图片路径 与实际代码变量的对应关系. 并创建动画帧, 用于背景图轮播动画 */
+ /* NOTE: 指定可以轮播的图片 ------------*/
+:root {
+  --bg-image-0: url("../image/bg-0.png");
+  --bg-image-1: url("../image/bg-1.jpg");
+  --bg-image-2: url("../image/bg-2.jpg");
+  --bg-image-3: url("../image/bg-3.jpg");
+  --bg-image-4: url("../image/bg-4.jpg");
+  --bg-image-5: url("../image/bg-5.jpg");
+  --bg-image-6: url("../image/bg-6.jpg");
+  --bg-image-7: url("../image/bg-7.jpg");
+  --bg-image-8: url("../image/bg-8.jpg");
+  --bg-image-9: url("../image/bg-9.jpg");
+  --bg-image-10: url("../image/bg-10.jpg");
+}
+
+/* TODO 背景图轮播动画, 与上文指定对片对应 */
+/* NOTE： 注意, keyframes自动声明了 --scope-bg-image */
+@keyframes CarouselBackgroundImageList {
+  /* 0% 到 7% 维持第一张，8% 到 9% 切换到下一张 */
+  0%, 7% { --scope-bg-image: var(--bg-image-0); }
+  9%, 16% { --scope-bg-image: var(--bg-image-1); }
+  18%, 25% { --scope-bg-image: var(--bg-image-2); }
+  27%, 34% { --scope-bg-image: var(--bg-image-3); }
+  36%, 43% { --scope-bg-image: var(--bg-image-4); }
+  45%, 52% { --scope-bg-image: var(--bg-image-5); }
+  54%, 61% { --scope-bg-image: var(--bg-image-6); }
+  63%, 70% { --scope-bg-image: var(--bg-image-7); }
+  72%, 79% { --scope-bg-image: var(--bg-image-8); }
+  81%, 88% { --scope-bg-image: var(--bg-image-9); }
+  90%, 97% { --scope-bg-image: var(--bg-image-10); }
+  100% { --scope-bg-image: var(--bg-image-0); }
+}

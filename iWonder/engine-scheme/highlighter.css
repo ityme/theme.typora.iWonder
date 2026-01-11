@@ -1,6 +1,7 @@
 /* NOTE: 注意引入顺序 */
 @import "../color-scheme/base/color.css";
 @import "../font-scheme/base/font.css";
+@import "../image-scheme/base/image.css";
 
 /* 页面 基础配置 */
 :root {
@@ -39,6 +40,9 @@ body {
 #write {
   background-color: var(--scope-text-color);
 }
+
+/* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
+/* FIXME: 背景图片轮播相关设置: /image-scheme/base/image.css" */
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* 文本域基础设置 */

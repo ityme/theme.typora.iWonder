@@ -1,0 +1,16 @@
+/* 图片 / 背景图方案 */
+
+/* TODO: 背景图轮播动画 在 ./map/map.css 中 指定图片*/
+:root {
+  /* NOTE: 背景图片展示相关的 主要参数设置 */
+  /* NOTE: 背景图上方元素们的透明度 */
+  /* 暂不支持在此处设置, 透明都可去cyan.css 中以数值(0.7)的形式直接声明 */
+  /* --scope-opacity: 0.5;
+
+  /* 背景图轮播周期(播完一轮所需要的秒数) */
+  --scope-bg-image-period: 2400s;
+
+  /* NOTE: 默认背景图 当body animation: none; 时展示的图片*/
+  /* --bg-image-0 被声明在了 ./map/map.css 中 */
+  --scope-bg-image: var(--bg-image-0);
+}

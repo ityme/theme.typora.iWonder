@@ -4,7 +4,9 @@
 /* 字体方案选择 */
 @import "iWonder/font-scheme/elegant.css";
 
+/* 图片方案选择 */
+@import "iWonder/image-scheme/carousel.css";
+
 /* 样式方案选择 */
 /* 本行放在文本最后 */
 @import "iWonder/engine-scheme/highlighter.css";
-

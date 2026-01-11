@@ -1,0 +1,27 @@
+@import "../map/map.css";
+
+/* 背景图片相关设置 */
+/* h1不包含语义标签<i>时 -> 背景图片不展示逻辑  */
+body:not(:has(h1:first-of-type > span:nth-child(1 of [md-inline="tag"]))) {
+  background-image: none;
+  animation: none;
+}
+
+/* h1拥有一个语义标签(<i>)时 -> 背景图片轮播动画效果展示逻辑 */
+body:has(h1:first-of-type > span:nth-child(1 of [md-inline="tag"])) {
+  background-image: var(--scope-bg-image);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  /* 按指定间隔 无限轮播 CarouselBackgroundImageList中指定的图片 */
+  animation: CarouselBackgroundImageList var(--scope-bg-image-period)
+    ease-in-out infinite;
+  /* 平滑淡入淡出 */
+  transition: var(--scope-bg-image) 1s linear;
+}
+
+/* h1拥有两个及以上语义标签(<i>)时 -> 关闭背景图片轮播动画效果逻辑, 并展示指定背景图 */
+/* 指定背景图: carousel.css: --scope-bg-image: var(--bg-image-0) */
+body:has(h1:first-of-type > span:nth-child(2 of [md-inline="tag"])) {
+  animation: none;
+}
