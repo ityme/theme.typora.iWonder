@@ -54,9 +54,9 @@
 >
 > 3. Copy `i-w-blue.css` and rename it `i-w-red.css`.
 >
->    Modify `@ import url ("iWonder/color-scheme/blue.css");` text to `@ import url ("iWonder/color-scheme/red.css")`.
+>    Modify `@import url("iWonder/color-scheme/blue.css");` text to `@import url("iWonder/color-scheme/red.css")`.
 >
->    Modify `@ import url ("iWonder/font-scheme/elegant.css");` text to `@ import url ("iWonder/font-scheme/song.css")`.
+>    Modify `@import url("iWonder/font-scheme/elegant.css");` text to `@import url("iWonder/font-scheme/song.css")`.
 >
 > 4. Switch the Typora theme named `IWRed`.
 
