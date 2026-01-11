@@ -1,8 +1,9 @@
-/*样式方案选择*/
-@import "iWonder/engine-scheme/highlighter.css";
+/* 配色方案选择 */
+@import "iWonder/color-scheme/blue.css";
 
-/*字体方案选择*/
+/* 字体方案选择 */
 @import "iWonder/font-scheme/elegant.css";
 
-/*配色方案选择*/
-@import "iWonder/color-scheme/blue.css";
+/* 样式方案选择 */
+/* 本行放在文本最后 */
+@import "iWonder/engine-scheme/highlighter.css";
