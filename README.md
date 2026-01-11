@@ -1,4 +1,4 @@
-# iWonder Typora Theme
+# iWonder Typora Theme<i><i>
 
 > 一个我想要的Typora主题.
 >
@@ -11,10 +11,10 @@
 ## 特性 | Feature
 
 > 1. 主题配色方案让重点更突出醒目, 详见下方预览.
-> 2. 提供更简化的标签快捷键, 配合自定义的标签颜色, 一键修改选中文本颜色.
-> 3. 提供特殊语义标签, 让页面展现出更多样式.
+> 2. 提供更简化的标签快捷键, 配合自定义的标签颜色, 一键高亮选中文本.
+> 3. 提供特殊语义标签, 让页面展现出更多花样.
 > 4. iWonder主题仅在Windows系统下做过测试, 无法确定Linux和Mac下效果.
-> 5. iWonder主题持续更新中.
+> 5. iWonder主题持续更新中, 有新需求欢迎留言.
 
 > 1. The theme color scheme makes the key points more prominent and eye-catching, as shown in the preview.
 > 2. Provide simplified label shortcuts, combined with custom label colors, to modify the selected text color with just one click.
@@ -22,45 +22,7 @@
 > 4. The iWonder theme has only been tested on Windows systems and cannot determine its effectiveness on Linux and Mac.
 > 5. The iWonder theme is constantly being updated.
 
-## 私人订制 | DIY
-
-> 通过修改`iWonder > color-scheme > blue.css` 和 `iWonder > font-scheme > elegant.css`中的配置项, 可以任意修改本主题的字体和颜色.
->
-> 进阶：定制多个主题并存.
->
-> 示例：假设, 我想要修改一套红色, 宋体字体的主题, 那么我可以：
->
-> 1. 复制`iWonder > color-scheme > blue.css`并将之重命名为`red.css`, 修改其中的颜色为红色系列.
->
-> 2. 复制`iWonder > font-scheme > elegant.css`并将之重命名为`song.css`, 修改其中的字体为宋体.
->
-> 3. 复制`i-w-blue.css`并将之重命名为`i-w-red.css`,
->
->    修改其中`@import url("iWonder/color-scheme/blue.css");`文本为`@import url("iWonder/color-scheme/red.css")`,
->
->    修改其中`@import url("iWonder/font-scheme/elegant.css");`文本为`@import url("iWonder/font-scheme/song.css")`.
->
-> 4. Typora中切换名为`IWRed`的主题.
-
-> You can modify the font and color of this theme arbitrarily by modifying the configuration items in `iWonder > color-scheme > blue.css` and `Font > font-scheme > elegant.css`.
->
-> Advanced: customize the coexistence of multiple themes.
->
-> Example: suppose I want to change the theme of a set of red and song font, then I can:
->
-> 1. Copy `red > color-scheme > blue.css` and rename it to `red.css`, and change the color to red series.
->
-> 2. Copy `iWonder > font-scheme > elegant.css` and rename it `song.css`, and change the font to Song font.
->
-> 3. Copy `i-w-blue.css` and rename it `i-w-red.css`.
->
->    Modify `@import url("iWonder/color-scheme/blue.css");` text to `@import url("iWonder/color-scheme/red.css")`.
->
->    Modify `@import url("iWonder/font-scheme/elegant.css");` text to `@import url("iWonder/font-scheme/song.css")`.
->
-> 4. Switch the Typora theme named `IWRed`.
-
-## 安装方式 | Install
+## 安装 | Install
 
 >> **一键安装✨**
 >
@@ -103,33 +65,74 @@
 | CodeFences | 多行代码块 | `Ctrl+Shift+K` |
 | Image      | 图片       | `Ctrl+Shift+I` |
 
-## 语义标签
+## 语义标签 | SemanticTags
 
 > [!Tip]
 >
 > <font color="#1f883d">部分文本中, 通过后缀特殊语义标签, 可对样式进行调整, 以使排版更美观</font>
 
-| 语义标签 | 适用范围 | 作用                                                         | 示例                   |
-| -------- | -------- | ------------------------------------------------------------ | ---------------------- |
-| `<fit>`  | 标题     | 标题默认背景色填充整行, 在标题中后缀本标签后, 背景色不再填充整行, 而是由内容撑开 | `## 这是一个标题<fit>` |
+| 语义标签 | 适用范围         | 作用                                                         | 示例                              |
+| -------- | ---------------- | ------------------------------------------------------------ | --------------------------------- |
+| `<i>`    | `h1`             | 在`h1`中后缀不同数量`<i>`控制不同的页面背景样式 | `# title`:无背景图 | `# title <i>`:背景图轮播 | `# title <i><i>`:单背景图 |
+| `<fit>`  | `h2 h3 h4 h5 h6` | 标题默认背景色填充整行, 标题中后缀本标签后, 背景色不再填充整行, 而是由内容撑开 | `## title`: 背景色填充整行 | `## title <fit>`:标题背景色区域大小由文本内容大小决定 |
 
+## 订制 | DIY
 
+> 通过修改特定的的配置项, 可以任意修改本主题的字体和颜色和背景图样式.
+>
+> 进阶：定制多个主题并存.
+>
+> 示例：假设, 我想要修改一套红色, 宋体字体, 自定义背景图的主题, 那么我可以：
+>
+> 1. 复制`iWonder > color-scheme > cyan.css`并将之重命名为`red.css`, 修改其中的颜色为红色系列.
+>
+> 2. 复制`iWonder > font-scheme > elegant.css`并将之重命名为`song.css`, 修改其中的字体为宋体.
+>
+> 3. 修改`iWonder > image-scheme > carousel.css`中背景相关参数.
+>
+> 4. 复制`i-w-cyan.css`并将之重命名为`i-w-red.css`,
+>
+>    修改其中`@import url("iWonder/color-scheme/cyan.css");`文本为`@import url("iWonder/color-scheme/red.css")`,
+>
+>    修改其中`@import url("iWonder/font-scheme/elegant.css");`文本为`@import url("iWonder/font-scheme/song.css")`.
+>
+> 5. Typora中切换名为`IWRed`的主题.
+
+> You can modify the font, color and background images style of this theme arbitrarily by modifying the configuration items.
+>
+> Advanced: customize the coexistence of multiple themes.
+>
+> Example: suppose I want to change the theme of a set of red, song font and customize background images, then I can:
+>
+> 1. Copy `red > color-scheme > cyan.css` and rename it to `red.css`, and change the color to red series.
+>
+> 2. Copy `iWonder > font-scheme > elegant.css` and rename it `song.css`, and change the font to Song font.
+>
+> 3. Modify `iWonder > image-scheme > carousel.css`.
+>
+> 4. Copy `i-w-cyan.css` and rename it `i-w-red.css`.
+>
+>    Modify `@import url("iWonder/color-scheme/cyan.css");` text to `@import url("iWonder/color-scheme/red.css")`.
+>
+>    Modify `@import url("iWonder/font-scheme/elegant.css");` text to `@import url("iWonder/font-scheme/song.css")`.
+>
+> 5. Switch the Typora theme named `IWRed`.
 
 ## 预览 | Preview
 
-### 封面原图
+### 封面主图
 
-<img src="ref/thumbnail-origin.png" alt="封面图-原图" style="zoom: 33%;" /> 
+<img src="ref/thumbnail-origin.png" alt="主图-原图" style="zoom: 25%;" /> 
 
 ### 窄屏模式
 
-<img src="ref/narrow-screen-mode-without-sidebar.png" alt="窄屏模式-无侧边栏" style="zoom: 33%;" /> <img src="ref/narrow-screen-mode.png" alt="窄屏模式" style="zoom: 33%;" /> 
+<img src="ref/narrow-bg-1.png" alt="窄屏模式-背景图-1" style="zoom: 20%;" /> <img src="ref/narrow-bg-2.png" alt="窄屏模式-背景图-2" style="zoom: 20%;" /> <img src="ref/narrow-sidebar.png" alt="窄屏模式-侧边栏" style="zoom: 20%;" />
 
 
 
 ### 宽屏模式
 
-<img src="ref/full-screen-mode-without-sidebar.png" alt="宽屏模式-无侧边栏" style="zoom:33%;" />  <img src="ref/full-screen-mode.png" alt="宽屏模式" style="zoom:33%;" />
+<img src="ref/wide-bg.png" alt="宽屏模式-背景图" style="zoom:18%;" /> <img src="ref/wide-bg-sidebar.png" alt="宽屏模式-背景图-侧边栏" style="zoom:18%;" /> <img src="ref/wide-sidebar.png" alt="宽屏模式-侧边栏" style="zoom:18%;" />
 
 ### 设置界面
-<img src="ref/settings-page.png" alt="设置界面" style="zoom:33%;" /> 
+<img src="ref/settings.png" alt="设置界面" style="zoom:25%;" /> 
