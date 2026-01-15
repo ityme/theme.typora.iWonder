@@ -167,11 +167,26 @@ code {
 /* 只要满足条件的 span 数量不是 2 个及以上，就认为它是唯一的 */
 /* 只有 ## hello world <fit> 可以触发下列选择, <fit></fit>则无法触发 */
 /* #write h1:has(span[md-inline="tag"]):not(:has(span:nth-child(2 of [md-inline="tag"]))), */
-#write h2:has(span[md-inline="tag"]):not(:has(span:nth-child(2 of [md-inline="tag"]))),
-#write h3:has(span[md-inline="tag"]):not(:has(span:nth-child(2 of [md-inline="tag"]))),
-#write h4:has(span[md-inline="tag"]):not(:has(span:nth-child(2 of [md-inline="tag"]))),
-#write h5:has(span[md-inline="tag"]):not(:has(span:nth-child(2 of [md-inline="tag"]))),
-#write h6:has(span[md-inline="tag"]):not(:has(span:nth-child(2 of [md-inline="tag"]))) {
+#write
+  h2:has(span[md-inline="tag"]):not(
+    :has(span:nth-child(2 of [md-inline="tag"]))
+  ),
+#write
+  h3:has(span[md-inline="tag"]):not(
+    :has(span:nth-child(2 of [md-inline="tag"]))
+  ),
+#write
+  h4:has(span[md-inline="tag"]):not(
+    :has(span:nth-child(2 of [md-inline="tag"]))
+  ),
+#write
+  h5:has(span[md-inline="tag"]):not(
+    :has(span:nth-child(2 of [md-inline="tag"]))
+  ),
+#write
+  h6:has(span[md-inline="tag"]):not(
+    :has(span:nth-child(2 of [md-inline="tag"]))
+  ) {
   width: fit-content;
 }
 
@@ -250,28 +265,59 @@ code {
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* table 表格设置 */
-table,
-th,
-td {
-  text-align: left;
-  min-width: 1.1em;
-  min-height: 1.1em;
-  /* font-weight: bold; */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0; /* 使用像素值精确控制间距 */
+  font-size: 0.92em; /* 微缩字号配合大内边距，极具高级感 */
   color: var(--table-text-color);
-  /* background-color: var(--base-text-bg-color); */
-  border: 2px solid var(--table-border-color);
-  padding-left: 3px;
+  /* 解决边框溢出圆角的细节 */
+  border-style: hidden;
+  /* box-shadow: 0 0 0 1px var(--table-border-color);  */
+  /* border-radius: 4px; */
 }
 
-/* table表格鼠标悬停时的背景色设置 */
-th:hover,
-tr:hover {
-  background-color: var(--table-hover-bg-color);
+/* 单元格通用设置 */
+th,
+td {
+  padding: 10px 14px; /* 黄金比例内边距 */
+  text-align: left;
+  /* 使用较淡的边框颜色，避免“铁笼子”感 */
+  border: 1px solid var(--table-border-color);
+  word-break: break-all; /* 防止长单词撑破布局 */
 }
-/* table表格鼠标悬停时的文本色设置 */
-th:hover .td-span,
-tr:hover .td-span {
+
+/* 表头优化 */
+th {
+  font-weight: 600;
+}
+
+/* 首列与末列的对齐优化 (细节：呼吸感) */
+th:first-child,
+td:first-child {
+  padding-left: 18px; /* 首列左侧多留一点空间，视觉更平衡 */
+}
+th:last-child,
+td:last-child {
+  padding-right: 18px; /* 末列右侧同理 */
+}
+
+/* 悬停动画与质感 */
+tr {
+  transition: all 0.15s ease-in-out;
+}
+
+tr:hover {
+  /* 悬停时稍微加深背景，并使用 inset 阴影增加沉浸感 */
   color: var(--table-hover-text-color);
+  background-color: var(--table-hover-bg-color) !important;
+}
+
+/* 处理空单元格的细节 */
+td:empty::before {
+  content: "-"; /* 自动填充空单元格，保持整洁 */
+  color: #ccc;
+  opacity: 0.5;
 }
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
@@ -395,11 +441,16 @@ header,
 #top-titlebar,
 footer.ty-footer,
 content,
-.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #typora-sidebar,
-.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) header,
-.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) #top-titlebar,
-.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) footer.ty-footer,
-.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on) content {
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on)
+  #typora-sidebar,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on)
+  header,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on)
+  #top-titlebar,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on)
+  footer.ty-footer,
+.typora-node.pin-outline:not(.megamenu-opened):not(.typora-sourceview-on)
+  content {
   transition: width 0s;
 }
 
