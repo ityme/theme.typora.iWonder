@@ -6,7 +6,7 @@
 /* 页面 基础配置 */
 :root {
   /* 基础字体大小 */
-  font-size: 16px;
+  --font-size: 14px;
   /* 页面文本宽度 */
   /* --text-area-max-width: 85vmax; */
   --text-area-max-width: 1500px;
@@ -19,6 +19,7 @@
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* 抗锯齿渲染 */
 html {
+  font-size: var(--font-size);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -48,7 +49,7 @@ body {
 /* 文本域基础设置 */
 #write {
   font-family: var(--text-font-family);
-  font-size: 1.1em;
+  font-size: calc(var(--font-size) * 1.1);
   color: var(--text-color);
   /* 页面文本域宽度 */
   max-width: var(--text-area-max-width);
@@ -157,8 +158,9 @@ code {
   font-family: var(--header-font-family);
   padding: 3px;
   border-radius: 4px;
+  line-height: 1.6em;
   /* 最小行高, 防止after导致的高度塌陷 */
-  min-height: 1lh;
+  min-height: calc(1lh + 6px);
 }
 
 /* NOTE 双标签模式: 当h标签后缀一个 <fit> 时("fit"字符可以替换, 但不可为空),  h标签会自动变为非整行模式, 长度由内容大小撑开 */
@@ -241,7 +243,9 @@ code {
   color: rgb(from var(--header-text-color) r g b / 0.5);
   user-select: none;
   font-size: 0.5em;
+  line-height: 1em;
   float: right;
+  margin-top: 3px;
 }
 
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
