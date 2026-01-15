@@ -1,10 +1,10 @@
 /* TODO: 在此文件中, 配置背景图片路径 与实际代码变量的对应关系. 并创建动画帧, 用于背景图轮播动画 */
  /* NOTE: 指定可以轮播的图片 ------------*/
 :root {
-  --bg-image-0: url("../image/bg-0.png");
+  --bg-image-0: url("../image/bg-0.jpg");
   --bg-image-1: url("../image/bg-1.jpg");
   --bg-image-2: url("../image/bg-2.jpg");
-  --bg-image-3: url("../image/bg-3.jpg");
+  --bg-image-3: url("../image/bg-3.png");
   --bg-image-4: url("../image/bg-4.jpg");
   --bg-image-5: url("../image/bg-5.jpg");
   --bg-image-6: url("../image/bg-6.jpg");

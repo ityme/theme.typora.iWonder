@@ -12,5 +12,6 @@
 
   /* NOTE: 默认背景图 当body animation: none; 时展示的图片*/
   /* --bg-image-0 被声明在了 ./map/map.css 中 */
-  --scope-bg-image: var(--bg-image-10);
+  --scope-bg-image: var(--bg-image-2);
 }
+
