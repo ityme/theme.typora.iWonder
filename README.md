@@ -1,4 +1,4 @@
-# iWonder Typora Theme<i><i>
+# iWonder Typora Theme
 
 > 一个我想要的Typora主题.
 >
@@ -73,8 +73,8 @@
 
 | 语义标签 | 适用范围         | 作用                                                         | 示例                              |
 | -------- | ---------------- | ------------------------------------------------------------ | --------------------------------- |
-| `<i>`    | `h1`             | 在`h1`中后缀不同数量`<i>`控制不同的页面背景样式 | `# title`:无背景图 | `# title <i>`:背景图轮播 | `# title <i><i>`:单背景图 |
-| `<fit>`  | `h2 h3 h4 h5 h6` | 标题默认背景色填充整行, 标题中后缀本标签后, 背景色不再填充整行, 而是由内容撑开 | `## title`: 背景色填充整行 | `## title <fit>`:标题背景色区域大小由文本内容大小决定 |
+| `<i>`    | `h1`             | 在`h1`中后缀不同数量`<i>`控制不同的页面背景图展示模式 | `# title`:轮播 `#title <i>`:固定背景图 `#title <i><i>`: 无图 |
+| `<fit>`  | `h2 h3 h4 h5 h6` | 标题默认背景色填充整行, 标题中后缀本标签后, 背景色不再填充整行, 而是由内容撑开 | `## title`: 背景色填充整行 |
 
 ## 订制 | DIY
 
@@ -90,13 +90,17 @@
 >
 > 3. 修改`iWonder > image-scheme > carousel.css`中背景相关参数.
 >
-> 4. 复制`i-w-cyan.css`并将之重命名为`i-w-red.css`,
+> 4. 替换`iWonder > image-scheme > image`中背景图.
+>
+> 5. 修改`iWonder > image-scheme > map > map.css`中背景图路径与变量名的对照关系.
+>
+> 6. 复制`i-w-cyan.css`并将之重命名为`i-w-red.css`,
 >
 >    修改其中`@import url("iWonder/color-scheme/cyan.css");`文本为`@import url("iWonder/color-scheme/red.css")`,
 >
 >    修改其中`@import url("iWonder/font-scheme/elegant.css");`文本为`@import url("iWonder/font-scheme/song.css")`.
 >
-> 5. Typora中切换名为`IWRed`的主题.
+> 7. Typora中切换名为`IWRed`的主题.
 
 > You can modify the font, color and background images style of this theme arbitrarily by modifying the configuration items.
 >
@@ -110,13 +114,17 @@
 >
 > 3. Modify `iWonder > image-scheme > carousel.css`.
 >
-> 4. Copy `i-w-cyan.css` and rename it `i-w-red.css`.
+> 4. Replace the background images in `iWonder > image-scheme > image`.
+>
+> 5. Modify the mapping (or correspondence) between background image paths and variable names in `iWonder > image-scheme > map > map.css`.
+>
+> 6. Copy `i-w-cyan.css` and rename it `i-w-red.css`.
 >
 >    Modify `@import url("iWonder/color-scheme/cyan.css");` text to `@import url("iWonder/color-scheme/red.css")`.
 >
 >    Modify `@import url("iWonder/font-scheme/elegant.css");` text to `@import url("iWonder/font-scheme/song.css")`.
 >
-> 5. Switch the Typora theme named `IWRed`.
+> 7. Switch the Typora theme named `IWRed`.
 
 ## 预览 | Preview
 
