@@ -136,9 +136,10 @@ code {
   font-style: italic;
   font-size: 0.8em;
   padding: 2px 7px 2px 3px;
-  border-radius: 3px;
+  border-radius: 6px;
   margin: 2px;
 }
+
 /* 特殊设置: CodeMirror: background: transparent; 全是空的, 没有继承来自md-fences的背景色设置, 因此额外指定 */
 .CodeMirror.cm-s-inner {
   border-radius: 3px;
@@ -529,4 +530,21 @@ content,
 
 .window .window-content {
   font-family: var(--preferences-content-font-family);
+}
+
+/* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
+/* 通用背景阴影设置 */
+/* 适用于 代码块区域 TOC 搜索框 */
+.md-fences,
+.md-toc,
+.form-control,
+#file-library-search-input {
+  /* 1. 基础边框：使用极细且半透明的边框，增加精致感 */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  /* 2. 多重投影 (Layered Shadows) */
+  /* 模拟物理光影：从近到远、从实到虚的 5 层叠加 */
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), 0 2px 4px rgba(0, 0, 0, 0.03),
+    0 4px 8px rgba(0, 0, 0, 0.03), 0 8px 16px rgba(0, 0, 0, 0.03),
+    0 16px 32px rgba(0, 0, 0, 0.03) !important;
 }
