@@ -32,3 +32,9 @@ body:has(h1:first-of-type > span:nth-child(2 of [md-inline="tag"])) {
   background-image: none;
   animation: none;
 }
+
+/* 设置 -> 偏好设置 -> 背景图导致文本看不清问题 */
+body.unibody-window {
+  background-image: none !important;
+  animation: none !important;
+}
