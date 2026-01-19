@@ -6,7 +6,7 @@
 /* 页面 基础配置 */
 :root {
   /* 基础字体大小 */
-  --font-size: 14px;
+  --font-size: 16px;
   /* 页面文本宽度 */
   /* --text-area-max-width: 85vmax; */
   --text-area-max-width: 1500px;
