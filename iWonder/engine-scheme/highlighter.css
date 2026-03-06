@@ -113,6 +113,17 @@ img {
   background-color: var(--search-hit-bg-color);
 }
 
+/* 搜索/替换框 样式: */
+/* 修改为: 不会向下撑开正文内容(也没标题栏占用28px宽度) */
+.on-search-panel-open.on-replace-panel-open content,
+.on-search-panel-open.on-replace-panel-open content #typora-source,
+.on-search-panel-open content,
+.on-search-panel-open content #typora-source,
+.on-replace-panel-open content,
+.on-search-panel-open content {
+  top: 28px;
+}
+
 /* TODO 逻辑区域分割线-------------------------------------------------------------------------------------*/
 /* 行内 `code` 代码块样式设置 */
 code {
@@ -428,9 +439,11 @@ header {
 #file-library-search-input:focus {
   border-color: var(--primary-color);
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+  -webkit-box-shadow:
+    inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075),
+  box-shadow:
+    inset 0 1px 1px rgba(0, 0, 0, 0.075),
     0 0 8px rgba(102, 175, 233, 0.6);
 }
 
@@ -544,7 +557,10 @@ content,
 
   /* 2. 多重投影 (Layered Shadows) */
   /* 模拟物理光影：从近到远、从实到虚的 5 层叠加 */
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), 0 2px 4px rgba(0, 0, 0, 0.03),
-    0 4px 8px rgba(0, 0, 0, 0.03), 0 8px 16px rgba(0, 0, 0, 0.03),
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.03),
+    0 2px 4px rgba(0, 0, 0, 0.03),
+    0 4px 8px rgba(0, 0, 0, 0.03),
+    0 8px 16px rgba(0, 0, 0, 0.03),
     0 16px 32px rgba(0, 0, 0, 0.03) !important;
 }
