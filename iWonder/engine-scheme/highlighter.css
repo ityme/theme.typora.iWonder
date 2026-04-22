@@ -108,6 +108,23 @@ img {
   filter: drop-shadow(0 0 0.3em var(--img-shadow-color));
 }
 
+/* 图片悬停放大效果 */
+/* 图片变大很突兀, 没很好的解决方法, 该方案暂不启用 */
+/* img {
+  transition: transform 0.3s ease;
+  position: relative;
+  max-width: var(--text-area-max-width);
+  height: auto;
+  object-fit: contain;
+}
+
+img:hover {
+  z-index: 10;
+  transform: scale(2.3);
+  opacity: 1;
+}  */
+
+
 /* 搜索命中  ctrl + f  文本背景颜色 */
 .md-search-hit {
   background-color: var(--search-hit-bg-color);
